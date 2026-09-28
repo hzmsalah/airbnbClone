@@ -1,11 +1,14 @@
-import Image from "next/image";
+import Categories from "./components/Categories";
+import PropertyList from "./components/properties/PropertyList";
 
 export default function Home() {
   return (
-    <main className="">
-      Airbnb
+    <main className="max-w-full mx-auto px-6">
+      <Categories/>
 
-      <h2 className="text-airbnb">Django & Next</h2>
+      <div>
+        <PropertyList/>
+      </div>
     </main>
   );
 }
